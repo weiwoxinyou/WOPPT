@@ -1,0 +1,118 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'try.ui'
+#
+# Created by: PyQt5 UI code generator 5.12.3
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(961, 646)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.widgetFrame = QtWidgets.QFrame(self.centralwidget)
+        self.widgetFrame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.widgetFrame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.widgetFrame.setObjectName("widgetFrame")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widgetFrame)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.Run = QtWidgets.QPushButton(self.widgetFrame)
+        self.Run.setObjectName("Run")
+        self.horizontalLayout.addWidget(self.Run)
+        self.Add = QtWidgets.QPushButton(self.widgetFrame)
+        self.Add.setObjectName("Add")
+        self.horizontalLayout.addWidget(self.Add)
+        self.Del = QtWidgets.QPushButton(self.widgetFrame)
+        self.Del.setObjectName("Del")
+        self.horizontalLayout.addWidget(self.Del)
+        self.Log = QtWidgets.QPushButton(self.widgetFrame)
+        self.Log.setObjectName("Log")
+        self.horizontalLayout.addWidget(self.Log)
+        self.Shell = QtWidgets.QPushButton(self.widgetFrame)
+        self.Shell.setObjectName("Shell")
+        self.horizontalLayout.addWidget(self.Shell)
+        self.verticalLayout_2.addWidget(self.widgetFrame)
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frame)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.listWidget_2 = QtWidgets.QListWidget(self.frame)
+        self.listWidget_2.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.listWidget_2.setObjectName("listWidget_2")
+        self.horizontalLayout_2.addWidget(self.listWidget_2)
+        self.listWidget = QtWidgets.QListWidget(self.frame)
+        self.listWidget.setObjectName("listWidget")
+        self.horizontalLayout_2.addWidget(self.listWidget)
+        self.verticalLayout_2.addWidget(self.frame)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 961, 23))
+        self.menubar.setObjectName("menubar")
+        self.menuFile = QtWidgets.QMenu(self.menubar)
+        self.menuFile.setObjectName("menuFile")
+        self.menuEdit = QtWidgets.QMenu(self.menubar)
+        self.menuEdit.setObjectName("menuEdit")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.actionNew = QtWidgets.QAction(MainWindow)
+        self.actionNew.setObjectName("actionNew")
+        self.actionLoad = QtWidgets.QAction(MainWindow)
+        self.actionLoad.setObjectName("actionLoad")
+        self.actionSave = QtWidgets.QAction(MainWindow)
+        self.actionSave.setObjectName("actionSave")
+        self.actionSave_as = QtWidgets.QAction(MainWindow)
+        self.actionSave_as.setObjectName("actionSave_as")
+        self.actionNew_Pipeline = QtWidgets.QAction(MainWindow)
+        self.actionNew_Pipeline.setObjectName("actionNew_Pipeline")
+        self.actionEdit_Pipeline = QtWidgets.QAction(MainWindow)
+        self.actionEdit_Pipeline.setObjectName("actionEdit_Pipeline")
+        self.menuFile.addAction(self.actionNew)
+        self.menuFile.addAction(self.actionLoad)
+        self.menuFile.addAction(self.actionSave)
+        self.menuFile.addAction(self.actionSave_as)
+        self.menuEdit.addAction(self.actionNew_Pipeline)
+        self.menuEdit.addAction(self.actionEdit_Pipeline)
+        self.menubar.addAction(self.menuFile.menuAction())
+        self.menubar.addAction(self.menuEdit.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.Run.setText(_translate("MainWindow", "Run"))
+        self.Add.setText(_translate("MainWindow", "Add"))
+        self.Del.setText(_translate("MainWindow", "Del"))
+        self.Log.setText(_translate("MainWindow", "Log"))
+        self.Shell.setText(_translate("MainWindow", "Shell"))
+        self.menuFile.setTitle(_translate("MainWindow", "File"))
+        self.menuEdit.setTitle(_translate("MainWindow", "Edit"))
+        self.actionNew.setText(_translate("MainWindow", "New"))
+        self.actionLoad.setText(_translate("MainWindow", "Load"))
+        self.actionSave.setText(_translate("MainWindow", "Save"))
+        self.actionSave_as.setText(_translate("MainWindow", "Save as"))
+        self.actionNew_Pipeline.setText(_translate("MainWindow", "New Pipeline"))
+        self.actionEdit_Pipeline.setText(_translate("MainWindow", "Edit Pipeline"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
